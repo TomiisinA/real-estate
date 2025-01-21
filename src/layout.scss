@@ -17,12 +17,12 @@
  }
 
  @include md{
-    background-color: rgb(213, 236, 177);
+    background-color:white;
     max-width: 768px;
  }
 
  @include sm{
-    background-color: rgb(255, 127, 127);
+    background-color:white;
     max-width: 640px;
  }
 
