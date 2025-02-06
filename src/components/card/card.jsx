@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./card.scss";
+
 function Card({ item }) {
   return (
     <div className="card">
@@ -17,12 +18,14 @@ function Card({ item }) {
         <p className="price"> $ {item.price}</p>
         <div className="bottom">
           <div className="features">
-            <img src="/bed.png" alt="" />
-            <span>{item.bedroom} bedroom</span>
-          </div>
-          <div className="features">
-            <img src="/bed.png" alt="" />
-            <span>{item.bathroom} bathroom</span>
+            <div className="feature">
+              <img src="/bed.png" alt="" />
+              <span>{item.bedroom} bedroom</span>
+            </div>
+            <div className="feature">
+              <img src="/bed.png" alt="" />
+              <span>{item.bathroom} bathroom</span>
+            </div>
           </div>
           <div className="icons">
             <div className="icon">
