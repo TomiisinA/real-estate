@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./navbar.scss";
 import { Link  } from "react-router-dom";
 function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState();
 
-  const user = true;
+  const user = false;
 
   return (
     <nav>
@@ -13,10 +13,10 @@ function Navbar() {
           <img src="logo.png"></img>
           <span>LamaEstate</span>
         </a>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Agents</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/agents">Agents</Link>
       </div>
       <div className="right">
         {user ? (

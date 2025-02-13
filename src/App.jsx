@@ -29,6 +29,18 @@ function App() {
           path: "/profile",
           element: <ProfilePage />,
         },
+        {
+          path: "/about",
+          element: <ProfilePage />,
+        },
+        {
+          path: "/contact",
+          element: <aboutPage />,
+        },
+        {
+          path: "/agents",
+          element: <SinglePage/>,
+        },
       ],
     },
   ]);
